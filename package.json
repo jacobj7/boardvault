@@ -1,5 +1,5 @@
 {
-  "name": "nexus",
+  "name": "boardvault",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@8.15.0",
@@ -8,9 +8,9 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint"
+    "build": "turbo run build --filter=web",
+    "dev": "turbo run dev --filter=web",
+    "lint": "turbo run lint --filter=web"
   },
   "devDependencies": {
     "turbo": "^2.0.0"
