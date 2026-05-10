@@ -1,5 +1,5 @@
 {
-  "name": "nexus",
+  "name": "f1-monorepo",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@8.15.0",
@@ -8,11 +8,12 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint"
+    "dev": "pnpm --filter web dev",
+    "build": "pnpm --filter web build",
+    "start": "pnpm --filter web start",
+    "lint": "pnpm --filter web lint"
   },
   "devDependencies": {
-    "turbo": "^2.0.0"
+    "turbo": "^1.12.3"
   }
 }
