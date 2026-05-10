@@ -1,0 +1,13 @@
+# Auto-added by Nexus _git_helpers — DO NOT REMOVE.
+# Anything below is required for the deploy chain to work.
+node_modules/
+.next/
+dist/
+build/
+.turbo/
+.env
+.env.local
+.env.production.local
+.env.development.local
+*.log
+.DS_Store
